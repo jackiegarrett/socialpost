@@ -1,0 +1,19 @@
+<div class="timelineContainer">
+    <div class="timelineContent">
+        <div class="postTopSection">
+            <div class="title">
+                <p class="myThoughtsTitle">My Thoughts</p>
+            </div>
+            <div class="newThought">
+                <button class="newThoughtButton" (click)="showForm()">New Thought</button>
+            </div>
+        </div>
+        <div class="postBottomSection">
+            <app-post *ngFor="let post of posts; index as i;"
+            [post]="post"
+            (deleted)="handleDelete(i)">
+            </app-post>
+        </div>
+    </div>
+    <app-post-form (submitted)="handleSubmit($event)" *ngIf="show"></app-post-form>
+</div>

@@ -1,0 +1,18 @@
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+<div class="postContainer">
+    <div class="postContent">
+        <div class="postSection">
+            <p class="titleName">{{post.title}}</p>
+            <p class="thoughtText">{{post.thought}}</p>
+        </div>
+        <div class="trashIcon">
+            <img src="./../assets/img/delete.svg"
+            height="20px"
+            width="20px"
+            alt="click this icon to remove post"
+            (click)="clickDelete()">
+        </div>
+    </div>
+</div>

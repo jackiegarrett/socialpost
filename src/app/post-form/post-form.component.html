@@ -1,0 +1,7 @@
+<form #postForm="ngForm" (ngSubmit)="submitForm(postForm)">
+    <input type="text" name="title" ngModel>
+    <input type="text" name="thought" ngModel>
+    <button>Add Post</button>
+</form>
+
+<!-- Forms module needs a) a name #addPost b] add event onto forms c) every input needs to have a name + ngModel  -->

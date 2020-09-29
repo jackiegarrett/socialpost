@@ -1,0 +1,35 @@
+.postContainer {
+    width: 100%;
+    background-color: white;
+}
+
+.postContent {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: white;
+   border-bottom: 1px solid #F3F1F7;
+}
+
+.postSection {
+    background-color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+.titleName {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.thoughtText {
+    margin: 0;
+}
+
+.trashIcon {
+    align-self: center;
+}
+

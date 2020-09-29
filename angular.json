@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "soclab"
+    }
+  },
+  "defaultProject": "soclab",
+  "cli": {
+    "analytics": false
+  }
 }
