@@ -1,7 +1,13 @@
-<form #postForm="ngForm" (ngSubmit)="submitForm(postForm)">
-    <input type="text" name="title" ngModel>
-    <input type="text" name="thought" ngModel>
-    <button>Add Post</button>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+<form #postForm="ngForm" (ngSubmit)="submitForm(postForm)" class="formStyle">
+    <div class="formContainer">
+        <label for="title">Title</label>
+        <input type="text" name="title" ngModel>
+        <label for="thought">Thought</label>
+        <input type="text" name="thought" class="thoughtInput" ngModel>
+        <button class="addPost">Add Post</button>
+    </div>
 </form>
 
 <!-- Forms module needs a) a name #addPost b] add event onto forms c) every input needs to have a name + ngModel  -->
